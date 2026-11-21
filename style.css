@@ -203,71 +203,65 @@ img {
 
 .features-section {
     width: 90%;
-    max-width: 1100px;
+    max-width: 1520px;
     margin: 0 auto;
     padding: 35px 0 100px;
 }
 
 .features-heading h2 {
-    font-size: 44px;
+    font-size: clamp(44px, 3.75vw, 72px);
     font-weight: 700;
+    line-height: 1.2;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: clamp(30px, 2.9vw, 56px);
 }
 
 .features-heading p {
-    font-size: 17px;
-    line-height: 1.6;
-    max-width: 980px;
-    margin: 0 auto 50px;
+    font-size: clamp(17px, 1.4vw, 27px);
+    line-height: 1.5;
+    margin-bottom: clamp(50px, 4.2vw, 80px);
 }
 
 .features-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 44px;
+    gap: clamp(20px, 3.75vw, 72px);
 }
 
 .feature-card {
-    border: 1px solid #d8d8d8;
-    border-radius: 8px;
-    padding: 18px;
-    min-height: 305px;
+    border: 1px solid #cfcfcf;
+    border-radius: 12px;
+    padding: clamp(18px, 1.1vw, 21px) clamp(18px, 1.35vw, 26px);
+    min-height: clamp(305px, 25.3vw, 486px);
     background-color: #ffffff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 .feature-icon {
-    width: 88px;
-    height: 88px;
+    width: clamp(88px, 7vw, 134px);
+    aspect-ratio: 1;
     background-color: #f7f6fc;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: clamp(15px, 1.1vw, 21px);
 }
 
 .feature-icon img {
-    width: 32px;
-    height: 32px;
+    width: clamp(32px, 36%, 48px);
     object-fit: contain;
 }
 
 .feature-card h3 {
-    font-size: 21px;
+    font-size: clamp(21px, 1.875vw, 36px);
     font-weight: 600;
-    margin-bottom: 12px;
+    line-height: 1.2;
+    margin-bottom: clamp(12px, 1.3vw, 25px);
 }
 
 .feature-card p {
-    font-size: 16px;
-    line-height: 1.55;
+    font-size: clamp(16px, 1.4vw, 27px);
+    line-height: 1.5;
     color: #666666;
 }
 
@@ -767,7 +761,6 @@ img {
 
     .feature-icon {
         width: 70px;
-        height: 70px;
     }
 
     .testimonial-section {
